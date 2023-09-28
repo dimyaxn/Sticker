@@ -14,7 +14,9 @@ class Sticker(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setStyle('Fusion')
     window = Sticker()
     window.setWindowFlag(QtCore.Qt.WindowStaysOnTopHint)
+    window.setWindowOpacity(0.6)
     window.show()
     sys.exit(app.exec())
